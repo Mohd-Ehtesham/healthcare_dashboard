@@ -2,7 +2,7 @@ import Tools from "./Tools";
 import General from "./General";
 import Setting from "./Setting";
 
-import styles from "./sidebar.module.css";
+import styles from "./Sidebar.module.css";
 
 export default function Sidebar() {
   return (
