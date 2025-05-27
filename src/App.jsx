@@ -1,7 +1,7 @@
 import Avatar from "./components/ui/Avatar";
 import Button from "./components/ui/Button";
 import Header from "./components/header/Header";
-import Sidebar from "./components/sidebar/sidebar";
+import Sidebar from "./components/sidebar/Sidebar";
 import Dashboard from "./components/dashboard/Dashboard";
 
 import avatar from "../src/assets/54b19ada-d53e-4ee9-8882-9dfed1bf1396.jpg";
