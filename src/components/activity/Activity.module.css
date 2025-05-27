@@ -1,0 +1,111 @@
+.container {
+  background-color: #f6faff;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 43rem;
+  position: relative;
+  top: -60px;
+}
+
+.title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #3730a3;
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  color: #9ca3af;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 8rem;
+  flex-wrap: wrap;
+}
+
+.dayColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 14%; /* Allow wrapping */
+  min-width: 40px;
+  margin-bottom: 1rem;
+}
+
+.bars {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.bar {
+  width: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.barCyan {
+  background-color: #06b6d4;
+  height: 35px;
+}
+
+.barIndigo {
+  background-color: #3730a3;
+  height: 70px;
+}
+
+.barGray {
+  background-color: #d1d5db;
+  height: 60px;
+}
+
+.margin {
+  margin-top: 10px;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 0.75rem;
+    top: -40px;
+  }
+
+  .chart {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .bars {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .bar {
+    width: 0.5rem;
+  }
+
+  .dayColumn {
+    min-width: 48px;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .subtitle {
+    font-size: 0.75rem;
+  }
+}

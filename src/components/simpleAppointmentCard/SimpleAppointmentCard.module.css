@@ -1,0 +1,45 @@
+.card {
+  background-color: #dde2f9;
+  padding: 0.3rem 1rem 0.5rem 1rem;
+  border-radius: 25px;
+  width: fit-content;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.title {
+  font-weight: bold;
+  color: #211d54;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+@media (max-width: 600px) {
+  .title {
+    gap: 20px;
+    font-size: 0.95rem;
+  }
+}
+
+.time {
+  color: #211d54;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .time {
+    font-size: 0.8rem;
+  }
+}
+
+.icon {
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  .icon {
+    font-size: 16px;
+  }
+}

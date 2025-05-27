@@ -1,0 +1,51 @@
+export const calendarAppointment = [
+  {
+    day: "Mon",
+    date: "25",
+    appointmentFirst: "10:00",
+    appointmentSecond: "11:00",
+    appointmentThird: "12:00",
+  },
+  {
+    day: "Tues",
+    date: "26",
+    appointmentFirst: "08:00",
+    appointmentSecond: "09:00",
+    appointmentThird: "10:00",
+  },
+  {
+    day: "Wed",
+    date: "27",
+    appointmentFirst: "12:00",
+    appointmentSecond: "----",
+    appointmentThird: "13:00",
+  },
+  {
+    day: "Thurs",
+    date: "28",
+    appointmentFirst: "10:00",
+    appointmentSecond: "11:00",
+    appointmentThird: "----",
+  },
+  {
+    day: "Fri",
+    date: "29",
+    appointmentFirst: "----",
+    appointmentSecond: "14:00",
+    appointmentThird: "16:00",
+  },
+  {
+    day: "Sat",
+    date: "30",
+    appointmentFirst: "12:00",
+    appointmentSecond: "14:00",
+    appointmentThird: "15:00",
+  },
+  {
+    day: "Sun",
+    date: "31",
+    appointmentFirst: "09:00",
+    appointmentSecond: "10:00",
+    appointmentThird: "11:00",
+  },
+];

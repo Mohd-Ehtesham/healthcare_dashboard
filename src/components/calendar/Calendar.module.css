@@ -1,0 +1,223 @@
+.calendarWrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 25px 15px 30px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 30px;
+}
+
+.h2 {
+  font-weight: 900;
+}
+
+.color {
+  color: #211d54;
+}
+
+.gridHeader {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-weight: bold;
+  margin: 0 15px 10px 15px;
+  color: #211d54;
+}
+
+.dayHeader {
+  padding: 5px;
+}
+
+.boxContainer {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 0 15px 30px 15px;
+  justify-items: center;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f9ff;
+  border-radius: 12px;
+  width: 100%;
+  min-width: 100px;
+  min-height: 120px;
+}
+
+.highlight {
+  background-color: #ecf5ff;
+}
+
+.firstAppointmentHighlight {
+  background-color: #adafda;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.firstAppointmentHighlight {
+  background-color: #adafda;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+.secondAppointmentHighlight {
+  background-color: #3832a8;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 10px;
+}
+
+.mergeContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 0;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.cardBlue {
+  background-color: #364fc7;
+  color: white;
+  font-weight: 500;
+  border-radius: 25px;
+  padding: 20px 15px 20px 25px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.cardPurple {
+  background-color: #dde2f9;
+  color: #211d54;
+  font-weight: 500;
+  border-radius: 25px;
+  padding: 20px 15px 20px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.leftText {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.marginBottom {
+  margin-bottom: 10px;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.joinLeft {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-right: 0;
+}
+
+.joinRight {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: 0;
+}
+
+@media (max-width: 1024px) {
+  .boxContainer {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  .mergeContainer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cardBlue,
+  .cardPurple {
+    width: 100%;
+    flex-grow: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .boxContainer {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .mainContainer {
+    min-width: auto;
+    width: 100%;
+  }
+
+  .cardBlue,
+  .cardPurple {
+    padding: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .icon {
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 480px) {
+  .boxContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .h2 {
+    font-size: 1.125rem;
+  }
+
+  .leftText {
+    font-size: 0.875rem;
+  }
+
+  .row {
+    font-size: 24px;
+  }
+}
